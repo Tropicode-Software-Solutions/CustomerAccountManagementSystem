@@ -6,21 +6,18 @@
 
 package com.tropicodesoftware.customer;
 
-import static com.sun.xml.fastinfoset.alphabet.BuiltInRestrictedAlphabets.table;
 import com.tropicodesoftware.profile.Address;
 import com.tropicodesoftware.profile.ContactInformation;
 import java.io.Serializable;
 import java.util.List;
 import java.util.Set;
 import javax.persistence.Column;
-import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.Inheritance;
 import javax.persistence.InheritanceType;
 import javax.persistence.ManyToMany;
-import javax.persistence.MappedSuperclass;
 import javax.persistence.SecondaryTable;
 
 /**
