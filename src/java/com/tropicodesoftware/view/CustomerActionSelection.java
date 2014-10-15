@@ -25,11 +25,15 @@ public class CustomerActionSelection{
         return "findExisting.xhtml";
     }
     
-    public String createNewPersonalCustomer(){
-        return "createNewPersonal";
-    }
-    
-    public String createNewOrganizationCustomer(){
-        return "createNewOrganization";
+ 
+    public String createNewCustomer(String type){
+        //based on which string is returned the next page is called 
+        switch (type) {
+            case "person":
+                return "createNewPersonal";
+            case "org":
+                return "createNewOrganization";
+            default: return null;
+        }
     }
 }

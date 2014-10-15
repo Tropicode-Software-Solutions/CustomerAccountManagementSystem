@@ -5,14 +5,14 @@
       xmlns:f="http://xmlns.jcp.org/jsf/core">
     <h:head>
         <title>Facelet Title</title>
-      <h:outputScript name="customerChooser.js" library="js" target="body"/>
+        <h:outputScript name="customerChooser.js" library="js" target="body"/>
     </h:head>
     <h:body>
-        <p id="testText">hh</p>
+      
         <f:view>
             <h:form>
-            <h:commandButton action="#{CustomerActionSelection.createNewPersonalCustomer}" value="New Customer"></h:commandButton>
-            <h:commandButton id="chooser" value="Existing Customer"></h:commandButton>
+                <h:commandButton action="#{CustomerActionSelection.createNewCustomer(type)}" value="New Customer"></h:commandButton>
+                <h:commandButton action="#{CustomerActionSelection.findExistingCustomer()}" value="Existing Customer"></h:commandButton>
             </h:form>
         </f:view>
     </h:body>
